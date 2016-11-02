@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Hello</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+</head>
+<body ng-app="myApp" class="container">
+<footer>
+    <h1>Angular Hello</h1>
+</footer>
+<div>
+    <a ui-sref="home"><button class="btn btn-primary">Home</button></a>
+    <a ui-sref="login"><button class="btn btn-primary">Login</button></a>
+    <ui-view></ui-view>
+</div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="app/components/myApp.js"></script>
+    <script src="app/directives/dayDetailsController.js"></script>
+    <script src="app/components/home/homeController.js"></script>
+    <script src="app/components/login/loginController.js"></script>
+
+    <script src="app/directives/dayDetails.js"></script>
+    <script src="app/components/login/loginService.js"></script>
+</body>
+</html>

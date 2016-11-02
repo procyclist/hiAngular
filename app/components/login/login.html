@@ -1,0 +1,11 @@
+<div>
+    <h1>Please login </h1>
+</div>
+
+<div ng-controller="loginController">
+    <form name="loginForm">
+    <input name="personName" ng-model="personName"/>
+    <button ng-click="goToHome(personName)" class="btn btn-default">Login</button>
+        {{personName}}
+    </form>
+</div>
